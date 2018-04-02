@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mendeleiev periodic table</title>
+	<style type="text/css">
+		body {
+			background-color: purple;
+		}
+
+		caption h1 {
+			text-align: center;
+			color: cyan;
+			font-family: Arial;
+		}
+
+		.all {
+			margin: 0 auto;
+		}
+
+		table {
+			margin: 0 auto;
+			width: 90%;
+			border-collapse: collapse;
+		}
+
+		.init_row th {
+			background: gray;
+			border: 1px solid purple;
+			border-bottom: 0px;
+			border-top: 0px;
+			text-align: center;
+			color: blue;
+			font-family: Helvetica;
+			font-size: 100%;
+			margin: 0 auto;
+		}
+		.init_row td {
+			background: purple;
+			text-align: center;
+			color: black;
+			font-family: Helvetica;
+			font-size: 100%;
+			margin: 0 auto;
+			width: 3%;
+		}
+
+		.regular_row td {
+			width: 3%;
+			text-align: center;
+			color: black;
+			border: 1px solid purple;
+			font-family: Helvetica;
+			font-size: 100%;
+			margin: 0 auto;
+		}
+
+		.tip {
+			text-align: center;
+			color: black;
+			font-family: Arial;
+			font-size: 100%;
+			margin: 0 auto;
+		}
+
+		.diatomic {
+			background: yellow;
+		}
+
+		.noble {
+			background: cyan;
+		}
+
+		.alkali {
+			background: red;
+		}
+
+		.earth_metal {
+			background: brown;
+		}
+
+		.metalloid {
+			background: #ffa000;
+		}
+
+		.poly_mommetal {
+			background: #00ff00;
+		}
+
+		.dia_nommetal {
+			background: #908000;
+		}
+
+		.post_metal {
+			background: gray;
+		}
+
+		.trans_metal {
+			background: #ff00ff;
+		}
+
+		.lanthanum {
+			background: #ff0080;
+		}
+
+		.actinide {
+			background: #ff00b0;
+		}
+
+		.unknown {
+			background: white;
+		}
+</style>
+</head>
+<body>
+	<div class="all">
+		<table>
+			<caption>
+				<h1>Mendeleiev periodic table of elements</h1>
+			</caption>
+			<tr class="init_row">
+				<td><b>Group</b></th>
+				<th>01</th>
+				<th>02</th>
+				<th>03</th>
+				<th>04</th>
+				<th>05</th>
+				<th>06</th>
+				<th>07</th>
+				<th>08</th>
+				<th>09</th>
+				<th>10</th>
+				<th>11</th>
+				<th>12</th>
+				<th>13</th>
+				<th>14</th>
+				<th>15</th>
+				<th>16</th>
+				<th>17</th>
+				<th>18</th>
+			</tr>
+			<tr class="init_row">
+				<td><b>Period</b></td>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr class="regular_row">
+				<td><h2>01</h2></td>
+				<td class="diatomic">
+					<p style="font-size: 100%; text-align: right;">1.008</p>
+					<h1 style="color: blue; margin: 0;">H</h1>
+					<p style="font-size: 100%; text-align: left; color: red;">1</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="noble">
+					<p style="font-size: 100%; text-align: right;">4.0026</p>
+					<h1 style="color: blue; margin: 0;">He</h1>
+					<p style="font-size: 100%; text-align: left;">2</p>
+				</td>
+			</tr>
+			<tr class="regular_row">
+				<td>02</td>
+				<td class="alkali">
+					<p style="font-size: 100%; text-align: right;">6.94</p>
+					<h1 style="color: blue; margin: 0;">Li</h1>
+					<p style="font-size: 100%; text-align: left;">3</p>
+				</td>
+				<td class="earth_metal">
+					<p style="font-size: 100%; text-align: right;">9.0122</p>
+					<h1 style="color: blue; margin: 0;">Be</h1>
+					<p style="font-size: 100%; text-align: left;">4</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="metalloid">
+					<p style="font-size: 100%; text-align: right;">10.81</p>
+					<h1 style="color: blue; margin: 0;">B</h1>
+					<p style="font-size: 100%; text-align: left;">5</p>
+				</td>
+				<td class="poly_mommetal">
+					<p style="font-size: 100%; text-align: right;">12.011</p>
+					<h1 style="color: blue; margin: 0;">C</h1>
+					<p style="font-size: 100%; text-align: left;">6</p>
+				</td>
+				<td class="dia_nommetal">
+					<p style="font-size: 100%; text-align: right;">14.007</p>
+					<h1 style="color: blue; margin: 0;">N</h1>
+					<p style="font-size: 100%; text-align: left;">7</p>
+				</td>
+				<td class="dia_nommetal">
+					<p style="font-size: 100%; text-align: right;">15.999</p>
+					<h1 style="color: blue; margin: 0;">O</h1>
+					<p style="font-size: 100%; text-align: left;">8</p>
+				</td>
+				<td class="dia_nommetal">
+					<p style="font-size: 100%; text-align: right;">18.998</p>
+					<h1 style="color: blue; margin: 0;">F</h1>
+					<p style="font-size: 100%; text-align: left;">9</p>
+				</td>
+				<td class="noble">
+					<p style="font-size: 100%; text-align: right;">20.180</p>
+					<h1 style="color: blue; margin: 0;">Ne</h1>
+					<p style="font-size: 100%; text-align: left;">10</p>
+				</td>
+			</tr>
+			<tr class="regular_row">
+				<td>03</td>
+				<td class="alkali">
+					<p style="font-size: 100%; text-align: right;">22.990</p>
+					<h1 style="color: blue; margin: 0;">Na</h1>
+					<p style="font-size: 100%; text-align: left;">11</p>
+				</td>
+				<td class="earth_metal">
+					<p style="font-size: 100%; text-align: right;">24.305</p>
+					<h1 style="color: blue; margin: 0;">Mg</h1>
+					<p style="font-size: 100%; text-align: left;">12</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;">26.982</p>
+					<h1 style="color: blue; margin: 0;">Al</h1>
+					<p style="font-size: 100%; text-align: left;">13</p>
+				</td>
+				<td class="metalloid">
+					<p style="font-size: 100%; text-align: right;">28.085</p>
+					<h1 style="color: blue; margin: 0;">Si</h1>
+					<p style="font-size: 100%; text-align: left;">14</p>
+				</td>
+				<td class="poly_mommetal">
+					<p style="font-size: 100%; text-align: right;">30.974</p>
+					<h1 style="color: blue; margin: 0;">P</h1>
+					<p style="font-size: 100%; text-align: left;">15</p>
+				</td>
+				<td class="poly_mommetal">
+					<p style="font-size: 100%; text-align: right;">32.06</p>
+					<h1 style="color: blue; margin: 0;">S</h1>
+					<p style="font-size: 100%; text-align: left;">16</p>
+				</td>
+				<td class="dia_nommetal">
+					<p style="font-size: 100%; text-align: right;">35.45</p>
+					<h1 style="color: blue; margin: 0;">Cl</h1>
+					<p style="font-size: 100%; text-align: left;">17</p>
+				</td>
+				<td class="noble">
+					<p style="font-size: 100%; text-align: right;">39.948</p>
+					<h1 style="color: blue; margin: 0;">Ar</h1>
+					<p style="font-size: 100%; text-align: left;">18</p>
+				</td>
+			</tr>
+			<tr class="regular_row">
+				<td>04</td>
+				<td class="alkali">
+					<p style="font-size: 100%; text-align: right;">39.098</p>
+					<h1 style="color: blue; margin: 0;">K</h1>
+					<p style="font-size: 100%; text-align: left;">19</p>
+				</td>
+				<td class="earth_metal">
+					<p style="font-size: 100%; text-align: right;">40.078</p>
+					<h1 style="color: blue; margin: 0;">Ca</h1>
+					<p style="font-size: 100%; text-align: left;">20</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">44.956</p>
+					<h1 style="color: blue; margin: 0;">Sc</h1>
+					<p style="font-size: 100%; text-align: left;">21</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">47.867</p>
+					<h1 style="color: blue; margin: 0;">Ti</h1>
+					<p style="font-size: 100%; text-align: left;">22</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">50.942</p>
+					<h1 style="color: blue; margin: 0;">V</h1>
+					<p style="font-size: 100%; text-align: left;">23</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">51.996</p>
+					<h1 style="color: blue; margin: 0;">Cr</h1>
+					<p style="font-size: 100%; text-align: left;">24</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">54.938</p>
+					<h1 style="color: blue; margin: 0;">Mn</h1>
+					<p style="font-size: 100%; text-align: left;">25</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">55.845</p>
+					<h1 style="color: blue; margin: 0;">Fe</h1>
+					<p style="font-size: 100%; text-align: left;">26</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">58.933</p>
+					<h1 style="color: blue; margin: 0;">Co</h1>
+					<p style="font-size: 100%; text-align: left;">27</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">58.693</p>
+					<h1 style="color: blue; margin: 0;">Ni</h1>
+					<p style="font-size: 100%; text-align: left;">28</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">63.546</p>
+					<h1 style="color: blue; margin: 0;">Cu</h1>
+					<p style="font-size: 100%; text-align: left;">29</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;">65.38</p>
+					<h1 style="color: blue; margin: 0;">Zn</h1>
+					<p style="font-size: 100%; text-align: left;">30</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;">69.723</p>
+					<h1 style="color: blue; margin: 0;">Ga</h1>
+					<p style="font-size: 100%; text-align: left;">31</p>
+				</td>
+				<td class="metalloid">
+					<p style="font-size: 100%; text-align: right;">72.630</p>
+					<h1 style="color: blue; margin: 0;">Ge</h1>
+					<p style="font-size: 100%; text-align: left;">32</p>
+				</td>
+				<td class="metalloid">
+					<p style="font-size: 100%; text-align: right;">74.922</p>
+					<h1 style="color: blue; margin: 0;">As</h1>
+					<p style="font-size: 100%; text-align: left;">33</p>
+				</td>
+				<td class="poly_mommetal">
+					<p style="font-size: 100%; text-align: right;">78.971</p>
+					<h1 style="color: blue; margin: 0;">Se</h1>
+					<p style="font-size: 100%; text-align: left;">34</p>
+				</td>
+				<td class="dia_nommetal">
+					<p style="font-size: 100%; text-align: right;">79.904</p>
+					<h1 style="color: blue; margin: 0;">Br</h1>
+					<p style="font-size: 100%; text-align: left;">35</p>
+				</td>
+				<td class="noble">
+					<p style="font-size: 100%; text-align: right;">83.798</p>
+					<h1 style="color: blue; margin: 0;">Kr</h1>
+					<p style="font-size: 100%; text-align: left;">36</p>
+				</td>
+			</tr>
+			<tr class="regular_row">
+				<td>05</td>
+				<td class="alkali">
+					<p style="font-size: 100%; text-align: right;">85.468</p>
+					<h1 style="color: blue; margin: 0;">Rb</h1>
+					<p style="font-size: 100%; text-align: left;">37</p>
+				</td>
+				<td class="earth_metal">
+					<p style="font-size: 100%; text-align: right;">87.62</p>
+					<h1 style="color: blue; margin: 0;">Sr</h1>
+					<p style="font-size: 100%; text-align: left;">38</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">88.906</p>
+					<h1 style="color: blue; margin: 0;">Y</h1>
+					<p style="font-size: 100%; text-align: left;">39</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">91.224</p>
+					<h1 style="color: blue; margin: 0;">Zr</h1>
+					<p style="font-size: 100%; text-align: left;">40</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">92.906</p>
+					<h1 style="color: blue; margin: 0;">Nb</h1>
+					<p style="font-size: 100%; text-align: left;">41</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">95.95</p>
+					<h1 style="color: blue; margin: 0;">Mb</h1>
+					<p style="font-size: 100%; text-align: left;">42</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">[98]</p>
+					<h1 style="color: blue; margin: 0;">Tc</h1>
+					<p style="font-size: 100%; text-align: left;">43</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">101.07</p>
+					<h1 style="color: blue; margin: 0;">Ru</h1>
+					<p style="font-size: 100%; text-align: left;">44</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">102.91</p>
+					<h1 style="color: blue; margin: 0;">Rh</h1>
+					<p style="font-size: 100%; text-align: left;">45</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">106.42</p>
+					<h1 style="color: blue; margin: 0;">Pd</h1>
+					<p style="font-size: 100%; text-align: left;">46</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;">107.87</p>
+					<h1 style="color: blue; margin: 0;">Ag</h1>
+					<p style="font-size: 100%; text-align: left;">47</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;">112.41</p>
+					<h1 style="color: blue; margin: 0;">Cd</h1>
+					<p style="font-size: 100%; text-align: left;">48</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;">114.82</p>
+					<h1 style="color: blue; margin: 0;">In</h1>
+					<p style="font-size: 100%; text-align: left;">49</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;">118.71</p>
+					<h1 style="color: blue; margin: 0;">Sn</h1>
+					<p style="font-size: 100%; text-align: left;">50</p>
+				</td>
+				<td class="metalloid">
+					<p style="font-size: 100%; text-align: right;">121.76</p>
+					<h1 style="color: blue; margin: 0;">Sb</h1>
+					<p style="font-size: 100%; text-align: left;">51</p>
+				</td>
+				<td class="metalloid">
+					<p style="font-size: 100%; text-align: right;">127.60</p>
+					<h1 style="color: blue; margin: 0;">Te</h1>
+					<p style="font-size: 100%; text-align: left;">52</p>
+				</td>
+				<td class="dia_nommetal">
+					<p style="font-size: 100%; text-align: right;  ">126.90</p>
+					<h1 style="color: blue; margin: 0;">I</h1>
+					<p style="font-size: 100%; text-align: left;  ">53</p>
+				</td>
+				<td class="noble">
+					<p style="font-size: 100%; text-align: right;  ">131.29</p>
+					<h1 style="color: blue; margin: 0;">Xe</h1>
+					<p style="font-size: 100%; text-align: left;  ">54</p>
+				</td>
+			</tr>
+			<tr class="regular_row">
+				<td>06</td>
+				<td class="alkali">
+					<p style="font-size: 100%; text-align: right;  ">132.91</p>
+					<h1 style="color: blue; margin: 0;">Cs</h1>
+					<p style="font-size: 100%; text-align: left;  ">55</p>
+				</td>
+				<td class="earth_metal">
+					<p style="font-size: 100%; text-align: right;  ">137.33</p>
+					<h1 style="color: blue; margin: 0;">Ba</h1>
+					<p style="font-size: 100%; text-align: left;  ">56</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">138.91</p>
+					<h1 style="color: blue; margin: 0;">La</h1>
+					<p style="font-size: 100%; text-align: left;  ">57</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">178.49</p>
+					<h1 style="color: blue; margin: 0;">Hf</h1>
+					<p style="font-size: 100%; text-align: left;  ">72</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">180.95</p>
+					<h1 style="color: blue; margin: 0;">Ta</h1>
+					<p style="font-size: 100%; text-align: left;  ">73</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">183.84</p>
+					<h1 style="color: blue; margin: 0;">W</h1>
+					<p style="font-size: 100%; text-align: left;  ">74</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">185.21</p>
+					<h1 style="color: blue; margin: 0;">Re</h1>
+					<p style="font-size: 100%; text-align: left;  ">75</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">190.23</p>
+					<h1 style="color: blue; margin: 0;">Os</h1>
+					<p style="font-size: 100%; text-align: left;  ">76</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">192.22</p>
+					<h1 style="color: blue; margin: 0;">Ir</h1>
+					<p style="font-size: 100%; text-align: left;  ">77</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">195.08</p>
+					<h1 style="color: blue; margin: 0;">Pt</h1>
+					<p style="font-size: 100%; text-align: left;  ">78</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">196.97</p>
+					<h1 style="color: blue; margin: 0;">Au</h1>
+					<p style="font-size: 100%; text-align: left;  ">79</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;  ">200.59</p>
+					<h1 style="color: blue; margin: 0;">Hg</h1>
+					<p style="font-size: 100%; text-align: left;  ">80</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;  ">204.38</p>
+					<h1 style="color: blue; margin: 0;">Tl</h1>
+					<p style="font-size: 100%; text-align: left;  ">81</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;  ">207.2</p>
+					<h1 style="color: blue; margin: 0;">Pb</h1>
+					<p style="font-size: 100%; text-align: left;  ">82</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;  ">208.98</p>
+					<h1 style="color: blue; margin: 0;">Bi</h1>
+					<p style="font-size: 100%; text-align: left;  ">83</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;  ">[209]</p>
+					<h1 style="color: blue; margin: 0;">Po</h1>
+					<p style="font-size: 100%; text-align: left;  ">84</p>
+				</td>
+				<td class="metalloid">
+					<p style="font-size: 100%; text-align: right;  ">[210]</p>
+					<h1 style="color: blue; margin: 0;">At</h1>
+					<p style="font-size: 100%; text-align: left;  ">85</p>
+				</td>
+				<td class="noble">
+					<p style="font-size: 100%; text-align: right;  ">[222]</p>
+					<h1 style="color: blue; margin: 0;">Rn</h1>
+					<p style="font-size: 100%; text-align: left;  ">86</p>
+				</td>
+			</tr>
+			<tr class="regular_row">
+				<td>07</td>
+				<td class="alkali">
+					<p style="font-size: 100%; text-align: right;  ">[223]</p>
+					<h1 style="color: blue; margin: 0;">Fr</h1>
+					<p style="font-size: 100%; text-align: left;  ">87</p>
+				</td>
+				<td class="earth_metal">
+					<p style="font-size: 100%; text-align: right;  ">[226]</p>
+					<h1 style="color: blue; margin: 0;">Ra</h1>
+					<p style="font-size: 100%; text-align: left;  ">88</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[227]</p>
+					<h1 style="color: blue; margin: 0;">Ac</h1>
+					<p style="font-size: 100%; text-align: left;  ">89</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">[267]</p>
+					<h1 style="color: blue; margin: 0;">Rf</h1>
+					<p style="font-size: 100%; text-align: left;  ">104</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">[268]</p>
+					<h1 style="color: blue; margin: 0;">Db</h1>
+					<p style="font-size: 100%; text-align: left;  ">105</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">[269]</p>
+					<h1 style="color: blue; margin: 0;">Sg</h1>
+					<p style="font-size: 100%; text-align: left;  ">106</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">[270]</p>
+					<h1 style="color: blue; margin: 0;">Bh</h1>
+					<p style="font-size: 100%; text-align: left;  ">107</p>
+				</td>
+				<td class="trans_metal">
+					<p style="font-size: 100%; text-align: right;  ">[270]</p>
+					<h1 style="color: blue; margin: 0;">Hs</h1>
+					<p style="font-size: 100%; text-align: left;  ">108</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[278]</p>
+					<h1 style="color: blue; margin: 0;">Mt</h1>
+					<p style="font-size: 100%; text-align: left;  ">109</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[281]</p>
+					<h1 style="color: blue; margin: 0;">Ds</h1>
+					<p style="font-size: 100%; text-align: left;  ">110</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[282]</p>
+					<h1 style="color: blue; margin: 0;">Rg</h1>
+					<p style="font-size: 100%; text-align: left;  ">111</p>
+				</td>
+				<td class="post_metal">
+					<p style="font-size: 100%; text-align: right;  ">[285]</p>
+					<h1 style="color: blue; margin: 0;">Cn</h1>
+					<p style="font-size: 100%; text-align: left;  ">112</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[286]</p>
+					<h1 style="color: blue; margin: 0;">Nh</h1>
+					<p style="font-size: 100%; text-align: left;  ">113</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[289]</p>
+					<h1 style="color: blue; margin: 0;">Fl</h1>
+					<p style="font-size: 100%; text-align: left;  ">114</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[290]</p>
+					<h1 style="color: blue; margin: 0;">Mc</h1>
+					<p style="font-size: 100%; text-align: left;  ">115</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[293]</p>
+					<h1 style="color: blue; margin: 0;">Lv</h1>
+					<p style="font-size: 100%; text-align: left;  ">116</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[294]</p>
+					<h1 style="color: blue; margin: 0;">Ts</h1>
+					<p style="font-size: 100%; text-align: left;  ">117</p>
+				</td>
+				<td class="unknown">
+					<p style="font-size: 100%; text-align: right;  ">[294]</p>
+					<h1 style="color: blue; margin: 0;">Og</h1>
+					<p style="font-size: 100%; text-align: left;  ">118</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: 5px solid purple;"></td>
+			</tr>
+			<tr>
+				<td style="border: 5px solid purple;"></td>
+			</tr>
+			<tr>
+				<td style="border: 5px solid purple;"></td>
+			</tr>
+			<tr class="regular_row">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">140.12</p>
+					<h1 style="color: blue; margin: 0;">Ce</h1>
+					<p style="font-size: 100%; text-align: left;  ">58</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">140.91</p>
+					<h1 style="color: blue; margin: 0;">Pr</h1>
+					<p style="font-size: 100%; text-align: left;  ">59</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">144.24</p>
+					<h1 style="color: blue; margin: 0;">Nd</h1>
+					<p style="font-size: 100%; text-align: left;  ">60</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">[145]</p>
+					<h1 style="color: blue; margin: 0;">Pm</h1>
+					<p style="font-size: 100%; text-align: left;  ">61</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">150.36</p>
+					<h1 style="color: blue; margin: 0;">Sm</h1>
+					<p style="font-size: 100%; text-align: left;  ">62</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">151.96</p>
+					<h1 style="color: blue; margin: 0;">Eu</h1>
+					<p style="font-size: 100%; text-align: left;  ">63</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">157.25</p>
+					<h1 style="color: blue; margin: 0;">Gd</h1>
+					<p style="font-size: 100%; text-align: left;  ">64</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">158.93</p>
+					<h1 style="color: blue; margin: 0;">Tb</h1>
+					<p style="font-size: 100%; text-align: left;  ">65</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">162.50</p>
+					<h1 style="color: blue; margin: 0;">Dy</h1>
+					<p style="font-size: 100%; text-align: left;  ">66</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">164.93</p>
+					<h1 style="color: blue; margin: 0;">Ho</h1>
+					<p style="font-size: 100%; text-align: left;  ">67</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">167.26</p>
+					<h1 style="color: blue; margin: 0;">Er</h1>
+					<p style="font-size: 100%; text-align: left;  ">68</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">168.93</p>
+					<h1 style="color: blue; margin: 0;">Tm</h1>
+					<p style="font-size: 100%; text-align: left;  ">69</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">173.05</p>
+					<h1 style="color: blue; margin: 0;">Yb</h1>
+					<p style="font-size: 100%; text-align: left;  ">70</p>
+				</td>
+				<td class="lanthanum">
+					<p style="font-size: 100%; text-align: right;  ">174.97</p>
+					<h1 style="color: blue; margin: 0;">Lu</h1>
+					<p style="font-size: 100%; text-align: left;  ">71</p>
+				</td>
+			</tr>
+			<tr class="regular_row">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">232.04</p>
+					<h1 style="color: blue; margin: 0;">Th</h1>
+					<p style="font-size: 100%; text-align: left;  ">90</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">231.04</p>
+					<h1 style="color: blue; margin: 0;">Pa</h1>
+					<p style="font-size: 100%; text-align: left;  ">91</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">238.03</p>
+					<h1 style="color: blue; margin: 0;">U</h1>
+					<p style="font-size: 100%; text-align: left;  ">92</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[237]</p>
+					<h1 style="color: blue; margin: 0;">Np</h1>
+					<p style="font-size: 100%; text-align: left;  ">93</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[244]</p>
+					<h1 style="color: blue; margin: 0;">Pu</h1>
+					<p style="font-size: 100%; text-align: left;  ">94</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[243]</p>
+					<h1 style="color: blue; margin: 0;">Am</h1>
+					<p style="font-size: 100%; text-align: left;  ">95</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[247]</p>
+					<h1 style="color: blue; margin: 0;">Cm</h1>
+					<p style="font-size: 100%; text-align: left;  ">96</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[247]</p>
+					<h1 style="color: blue; margin: 0;">Bk</h1>
+					<p style="font-size: 100%; text-align: left;  ">97</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[251]</p>
+					<h1 style="color: blue; margin: 0;">Cf</h1>
+					<p style="font-size: 100%; text-align: left;  ">98</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[252]</p>
+					<h1 style="color: blue; margin: 0;">Es</h1>
+					<p style="font-size: 100%; text-align: left;  ">99</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[257]</p>
+					<h1 style="color: blue; margin: 0;">Fm</h1>
+					<p style="font-size: 100%; text-align: left;  ">100</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[258]</p>
+					<h1 style="color: blue; margin: 0;">Md</h1>
+					<p style="font-size: 100%; text-align: left;  ">101</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[259]</p>
+					<h1 style="color: blue; margin: 0;">No</h1>
+					<p style="font-size: 100%; text-align: left;  ">102</p>
+				</td>
+				<td class="actinide">
+					<p style="font-size: 100%; text-align: right;  ">[266]</p>
+					<h1 style="color: blue; margin: 0;">Lr</h1>
+					<p style="font-size: 100%; text-align: left;  ">103</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
