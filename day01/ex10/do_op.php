@@ -12,7 +12,12 @@ if ($argc == 4)
 	else if (!strcmp($op, "*"))
 		$res = $f_op * $s_op;
 	else if (!strcmp($op, "/"))
-		$res = $f_op / $s_op;
+	{
+		if ($s_op != 0)
+			$res = $f_op / $s_op;
+		else
+			exit();
+	}
 	else if (!strcmp($op, "%"))
 		$res = $f_op % $s_op;
 	echo $res . "\n";

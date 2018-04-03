@@ -19,7 +19,6 @@ if ($argc == 2)
 		exit();
 	}
 	$values = explode($operator, $str);
-	print_r($values);
 	if (!is_numeric($values[0]) || !is_numeric($values[1]))
 		echo "Syntax Error\n";
 	else
@@ -31,7 +30,14 @@ if ($argc == 2)
 		else if (!strcmp($operator, "*"))
 			$res = $values[0] * $values[1];
 		else if (!strcmp($operator, "/"))
+		{
+			if ($values[1] == 0)
+			{
+				echo "Incorrect Parameters\n";
+				exit();
+			}
 			$res = $values[0] / $values[1];
+		}
 		else if (!strcmp($operator, "%"))
 			$res = $values[0] % $values[1];
 		echo $res . "\n";
