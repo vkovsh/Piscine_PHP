@@ -7,12 +7,12 @@ if ($argc == 2)
 		$operator = "*";
 	else if (strstr($str, "/"))
 		$operator = "/";
+	else if (strstr($str, "%"))
+		$operator = "%";
 	else if (strstr($str, "-"))
 		$operator = "-";
 	else if (strstr($str, "+"))
 		$operator = "+";
-	else if (strstr($str, "%"))
-		$operator = "%";
 	else
 	{
 		echo "Syntax Error\n";
@@ -39,7 +39,14 @@ if ($argc == 2)
 			$res = $values[0] / $values[1];
 		}
 		else if (!strcmp($operator, "%"))
+		{
+			if ($values[1] == 0)
+			{
+				echo "Incorrect Parameters\n";
+				exit();
+			}
 			$res = $values[0] % $values[1];
+		}
 		echo $res . "\n";
 	}
 }

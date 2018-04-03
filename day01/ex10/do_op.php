@@ -19,7 +19,13 @@ if ($argc == 4)
 			exit();
 	}
 	else if (!strcmp($op, "%"))
-		$res = $f_op % $s_op;
+	{
+		if ($s_op != 0)
+			$res = $f_op % $s_op;
+		else
+			exit();
+	}
+
 	echo $res . "\n";
 }
 else
