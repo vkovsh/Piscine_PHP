@@ -1,7 +1,8 @@
 #!/usr/bin/php
 <?
 include("ft_is_sort.php");
-$tab = array(-101, -100, 3, 3, 5);
+$tab = array("!/@#;^", "42", "Hello World", "hi", "zZzZzZz");
+$tab[] = "What are we doing now ?";
 if (ft_is_sort($tab))
 	echo "The array is sorted\n";
 else
